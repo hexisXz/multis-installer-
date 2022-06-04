@@ -1,0 +1,76 @@
+#!/usr/bin/env bash
+
+#if you want it to install fast you can remove the sleep commands
+i just added them there to feel more real.
+
+#install gish
+git clone https://github.com/xxhexisxx/gish_.git
+
+echo installing gish please wait
+sleep 2
+
+#rename gish
+mv ~/gish ~/gish-
+sleep 1
+
+#move gish to the home dir
+mv ~/gish-/gish ~/
+sleep 1
+
+#make gish be able to run on the system
+chmod +x gish
+sleep 1
+
+#make a alias for gish
+echo alias gish='./gish' >> .bashrc
+sleep 1
+
+echo ------------------------
+echo ------------------------
+echo --------COMPLETE--------
+echo ------------------------
+echo ------------------------
+
+echo to start gish type gish in the terminal.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
