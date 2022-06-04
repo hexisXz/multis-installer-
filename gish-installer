@@ -33,7 +33,7 @@ echo ------------------------
 
 echo to start gish type gish in the terminal.
 
-
+rm gish-installer
 
 
 
