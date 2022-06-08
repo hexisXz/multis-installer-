@@ -1,10 +1,19 @@
 #!/usr/bin/env bash
 
 #if you want it to install fast you can remove the sleep commands
-i just added them there to feel more real.
+#i just added them there to feel more real.
 
-#install gish
-git clone https://github.com/xxhexisxx/gish_.git
+
+echo "Do you want to install gish (y/n)"
+read question
+if [ "$question" == "y" ]; then
+        git clone https://github.com/xxhexisxx/gish_.git
+fi
+
+if [ "$question" == "n" ]; then
+        echo quiting.
+        exit
+fi
 
 echo installing gish please wait
 sleep 2
@@ -34,7 +43,6 @@ echo ------------------------
 echo to start gish type gish in the terminal.
 
 rm gish-installer
-
 
 
 
