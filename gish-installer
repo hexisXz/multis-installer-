@@ -3,7 +3,7 @@
 #if you want it to install fast you can remove the sleep commands
 #i just added them there to feel more real.
 
-
+## a question that asks if you want to install gish or not.
 echo "Do you want to install gish (y/n)"
 read question
 if [ "$question" == "y" ]; then
@@ -42,15 +42,24 @@ echo ------------------------
 
 echo to start gish type gish in the terminal.
 
-rm gish-installer
+
+## a question that asks if you want to remove the installer or not.
+echo "do you want to remove the gish-installer? (y/n)"
+
+read question2
+if [ "$question2" == "y" ]; then
+        rm gish-installer
+        echo "thankyou for installing gish :)"
+fi
 
 
-
-
-
-
-
-
+if [ "$question2" == "n" ]; then
+        echo okay quiting.
+        sleep 1
+        echo "thankyou for installing gish :)"
+        sleep 1
+        exit
+fi
 
 
 
