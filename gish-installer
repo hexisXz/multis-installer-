@@ -17,7 +17,7 @@ fi
 echo "installing gish please wait" ; sleep 2
 
 #rename gish then move gish to the home dir then make gish be able to run on the system then make a alias for gish
-mv ~/gish_ ~/gish- ; sleep 1 && mv ~/gish-/gish ~/ ; sleep 1 && chmod +x gish ; sleep 1 && echo alias gish='./gish' >> .bashrc ; sleep 1 && source .bashrc
+mv ~/gish_ ~/gish- && sleep 1 && mv ~/gish-/gish ~/ && sleep 1 && chmod +x gish && sleep 1 && echo alias gish='./gish' >> .bashrc && sleep 1 && source .bashrc
 
 echo ------------------------
 echo ------------------------
