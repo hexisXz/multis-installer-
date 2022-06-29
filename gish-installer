@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+
+#if you want it to install fast you can remove the sleep commands
+#i just added them there to feel more real.
+
+## a question that asks if you want to install gish or not.
+echo "Do you want to install gish (y/n)"
+read question
+if [ "$question" == "y" ]; then
+	git clone https://github.com/xxhexisxx/gish_.git
+fi
+
+if [ "$question" == "n" ]; then
+	echo quiting. ; exit
+fi
+
+echo "installing gish please wait" ; sleep 2
+
+#rename gish then move gish to the home dir then make gish be able to run on the system then make a alias for gish
+mv ~/gish_ ~/gish- ; sleep 1 && mv ~/gish-/gish ~/ ; sleep 1 && chmod +x gish ; sleep 1 && echo alias gish='./gish' >> .bashrc ; sleep 1 && source .bashrc
+
+echo ------------------------
+echo ------------------------
+echo --------COMPLETE--------
+echo ------------------------
+echo ------------------------
+
+echo "to start gish type gish in the terminal."
+
+
+## a question that asks if you want to remove the installer or not.
+echo "do you want to remove the gish-installer? (y/n)"
+
+read question2
+if [ "$question2" == "y" ]; then
+        rm gish-installer ; echo "thankyou for installing gish :)"
+fi
+
+
+if [ "$question2" == "n" ]; then
+	echo okay quiting. ; sleep 1 ; echo "thankyou for installing gish :)" ; exit
+fi
