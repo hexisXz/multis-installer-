@@ -44,7 +44,7 @@ echo "installing please wait" && sleep 2
 
 
 
-echo "to start gish type gish in the terminal or if you installed py-gish type py-gish in the terminal."
+echo "to start gish type gish in the terminal or if you installed py-gish type py-gish in the terminal. and before you try to use gish type source .bashrc so gish or py-gish can start."
 
 
 
