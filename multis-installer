@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 
-## a question that asks if you want to install gish or py-gish or if you don't want to.
-echo "(1) install py-gish
-(2) install gish
+## a question that asks if you want to install multis or multis-py or if you don't want to.
+echo "(1) install multis-py
+(2) install multis
 (3) exit"
 
 
@@ -44,21 +44,21 @@ echo "installing please wait" && sleep 2
 
 
 
-echo "to start gish type gish in the terminal or if you installed py-gish type py-gish in the terminal."
+echo "to start multis type multis in the terminal or if you installed multis-py type multis-py in the terminal."
 
 
 
 
 
 ## a question that asks if you want to remove the installer or not.
-echo "do you want to remove the gish-installer? (y/n)"
+echo "do you want to remove the multis-installer? (y/n)"
 
 
 
 
 read question2
 if [ "$question2" == "y" ]; then
-        rm gish-installer && echo "thank you for installing gish :)"
+        rm gish-installer && echo "thank you for installing multis :)"
 fi
 
 
@@ -66,5 +66,5 @@ fi
 
 
 if [ "$question2" == "n" ]; then
-	echo okay quiting. ; sleep 1 ; echo "thank you for installing gish :)" ; exit
+	echo okay quiting. ; sleep 1 ; echo "thank you for installing multis :)" ; exit
 fi
