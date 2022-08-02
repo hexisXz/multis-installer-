@@ -22,7 +22,8 @@ fi
 if [ "$question" == "2" ]; then
        git clone https://github.com/xxhexisxx/multis-py_chromeOS.git
        mv multis-py_chromeOS ~/multis-py_chromeOS- && mv multis-py_chromeOS-/multis-py_chromeOS ~/ && chmod +x multis-py_chromeOS && echo alias multis-py_chromeOS='./multis-py_chromeOS' >> .bashrc && source .bashrc
-
+       
+fi
 
 
 
