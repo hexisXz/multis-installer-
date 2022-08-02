@@ -3,8 +3,9 @@
 
 ## a question that asks if you want to install multis or multis-py or if you don't want to.
 echo "(1) install multis-py
-(2) install multis
-(3) exit"
+(2) install multis-py_chromeOS/android
+(3) install multis
+(4) exit"
 
 
 
@@ -18,8 +19,14 @@ fi
 
 
 
-
 if [ "$question" == "2" ]; then
+       git clone https://github.com/xxhexisxx/multis-py_chromeOS.git
+       mv multis-py_chromeOS ~/multis-py_chromeOS- && mv multis-py_chromeOS-/multis-py_chromeOS ~/ && chmod +x multis-py_chromeOS && echo alias multis-py_chromeOS='./multis-py_chromeOS' >> .bashrc && source .bashrc
+
+
+
+
+if [ "$question" == "3" ]; then
 	git clone https://github.com/xxhexisxx/multis_.git
 	mv ~/multis_ ~/multis- && sleep 1 && mv ~/multis-/multis ~/ && sleep 1 && chmod +x multis && sleep 1 && echo alias multis='./multis' >> .bashrc && sleep 1 && source .bashrc
 
@@ -29,7 +36,7 @@ fi
 
 
 
-if [ "$question" == "3" ]; then
+if [ "$question" == "4" ]; then
 	echo quiting. ; exit
 fi
 
