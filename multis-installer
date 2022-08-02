@@ -52,7 +52,7 @@ echo "installing please wait" && sleep 2
 
 
 
-echo "to start multis type multis in the terminal or if you installed multis-py type multis-py in the terminal."
+echo "to start multis type multis in the terminal or if you installed multis-py type multis-py in the terminal the same thing goes for multis-py_chromeOS."
 
 
 
