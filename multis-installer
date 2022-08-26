@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 
-## a question that asks if you want to install multis or multis-py or if you don't want to.
+## a question that asks if you want to install multis or not.
 echo "(1) install multis-py
 (2) install multis-py_chromeOS/android
 (3) install multis
