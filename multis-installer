@@ -12,8 +12,7 @@ echo "(1) install multis-py
 read question
 if [ "$question" == "1" ]; then
 	git clone https://github.com/xxhexisxx/multis-py.git
-	mv multis-py ~/multis-py_ && mv multis-py_/multis-py ~/ && sleep 1 && chmod +x multis-py && sleep 1 && echo alias multis-py='./multis-py' >> .bashrc && sleep 1
-	source .bashrc
+	mv multis-py ~/multis-py_ && mv multis-py_/multis-py ~/ && sleep 1 && chmod +x multis-py && sudo mv multis-py /bin
 
 fi
 
@@ -29,7 +28,7 @@ fi
 
 if [ "$question" == "3" ]; then
 	git clone https://github.com/xxhexisxx/multis_.git
-	mv ~/multis_ ~/multis- && sleep 1 && mv ~/multis-/multis ~/ && sleep 1 && chmod +x multis && sleep 1 && echo alias multis='./multis' >> .bashrc && sleep 1 && source .bashrc
+	mv ~/multis_ ~/multis- && sleep 1 && mv ~/multis-/multis ~/ && sleep 1 && chmod +x multis && sudo mv multis /bin
 
 fi
 
